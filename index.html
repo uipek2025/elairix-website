@@ -168,8 +168,10 @@
                 <input type="hidden" name="_subject" value="New contact request from elAIrix website">
                 <!-- Use a simple HTML table layout for the email body -->
                 <input type="hidden" name="_template" value="table">
-                <!-- Disable FormSubmit’s CAPTCHA prompt for a smoother user experience -->
-                <input type="hidden" name="_captcha" value="false">
+                <!-- Automatically send a response to the sender. This message gives a brief overview
+                     of our products and services while letting them know we will follow up soon.  Note:
+                     FormSubmit does not support dynamic field insertion, so the greeting is generic. -->
+                <input type="hidden" name="_autoresponse" value="Hi there, we have received your request and will get back to you in 24 hours. In the meantime, here are some preliminary details of our products and services: Custom AI Models – bespoke machine‑learning models tailored to your challenges; Edge &amp; 5G Integration – deploy AI at the edge with 5G for real‑time insights and low latency; AI Collaboration Tools – AI‑powered voice, video and collaboration platforms to enhance communication; elAI Vision – computer‑vision platform delivering object detection, facial recognition and event analysis; elAI Chat – conversational AI platform supporting natural language processing and generative AI; elAI Insights – predictive analytics engine providing actionable insights from advanced models.">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
