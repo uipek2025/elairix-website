@@ -368,6 +368,13 @@ section h2 {
     background-color: var(--dark-bg);
 }
 
+/* Add vertical spacing between the contact description and the form.  Without
+ * margins, the paragraph text sits directly on top of the form. Adding
+ * margin-bottom creates breathing room and improves readability. */
+.contact-section p {
+    margin-bottom: 1.5rem;
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;

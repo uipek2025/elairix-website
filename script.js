@@ -20,12 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Contact form submission (placeholder)
-  const form = document.getElementById('contact-form');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Simple alert to indicate form submission; real implementation would handle sending data
-    alert('Thank you for contacting elAIrix! We will get back to you shortly.');
-    form.reset();
-  });
+  // Remove the placeholder contact form handler. The updated form posts
+  // directly to FormSubmit and does not require interception in JavaScript.
 });

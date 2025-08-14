@@ -157,7 +157,19 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Have a question or want to discuss a project? Reach out and we'll be in touch.</p>
-            <form id="contact-form">
+            <!-- Updated contact form to send submissions directly to the owner's email via FormSubmit.
+                 Using an external service avoids the need for a backend and leverages
+                 FormSubmit.co's email forwarding. When visitors submit the form, the data
+                 will be posted to FormSubmit, which will forward it to the configured email
+                 address after a one‑time verification by the site owner. Hidden fields
+                 configure the email subject, response template and disable CAPTCHA. -->
+            <form id="contact-form" action="https://formsubmit.co/umit.ipek0701@gmail.com" method="POST">
+                <!-- The _subject field specifies the email subject line -->
+                <input type="hidden" name="_subject" value="New contact request from elAIrix website">
+                <!-- Use a simple HTML table layout for the email body -->
+                <input type="hidden" name="_template" value="table">
+                <!-- Disable FormSubmit’s CAPTCHA prompt for a smoother user experience -->
+                <input type="hidden" name="_captcha" value="false">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
